@@ -24,5 +24,9 @@ http://localhost:3000/demo/info
 
 src/utils/routes-loader.ts
 
+源码与设计思想
+
+https://ace0220.github.io/infrastructure/back-end/koa-routes-loader/
+
 
 
