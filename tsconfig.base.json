@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // 编译之后es版本
+    "useDefineForClassFields": true, // 对象属性没有赋默认值，如果是false，编译后不会出现这个属性
+    "module": "ESNext", // 编译之后的文件所采用的规范，es规范，commonjs规范等
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true, // 跳过.d.ts文件的检查
+
+    /* Bundler mode */
+    "moduleResolution": "bundler", // bundler 是 TypeScript5.0 新增的一个模块解析策略，使用 exports 声明类型的同时，使用相对路径模块可以不写扩展名
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    // ts文件没有提供导入导出的时候，会把内部class，变量等当作全局属性，会提示你改回模块格式
+    // 导出interface type的时候，export 需要加上type，例如： export type { someInterface }
+    "isolatedModules": true, // 底层可能使用了兼容规范的commonjs，但是上层允许使用import from进行导入
+    "esModuleInterop": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "declaration": false,
+
+    /* Linting */
+    "strict": true, // strict mode 开启后严格检查
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": [],
+    "paths": {
+      "@app/*": ["packages/app/src/*"],
+      "@utils/*": ["packages/utils/src/*"]
+    },
+    "baseUrl": "./",
+    "outDir": "dist"
+  }
+}
