@@ -14,10 +14,17 @@ pnpm install
 pnpm dev:onion
 ```
 
+全局异常捕获运行
 
-## demo核心模块
+```sh
+pnpm dev:ge
+```
 
+## demo核心代码
 
+洋葱模型：src/onion.ts
+
+全局异常：src/global-exception.ts
 
 源码与设计思想
 
