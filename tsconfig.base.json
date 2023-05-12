@@ -21,7 +21,7 @@
     /* Linting */
     "strict": true, // strict mode 开启后严格检查
     "noUnusedLocals": false,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "types": [],
     "paths": {

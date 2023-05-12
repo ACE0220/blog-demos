@@ -3,13 +3,13 @@
 ## 安装依赖
 
 ```sh
-npm install
+pnpm install
 ```
 
 ## 运行
 
 ```
-npm run dev
+pnpm dev
 ```
 
 ## 测试
