@@ -1,0 +1,9 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+  "compilerOptions": {
+    "rootDir": "./src", // 指定ts要变异的ts文件目录
+    "moduleResolution": "node",
+    "module": "commonjs"
+  }
+}

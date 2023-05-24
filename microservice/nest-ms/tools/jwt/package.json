@@ -1,0 +1,27 @@
+{
+  "name": "@nestms/tools-jwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "dev": "rimraf dist && tsc -p tsconfig.types.json && rollup -c --bundleConfigAsCjs --watch",
+    "build": "rimraf dist && tsc -p tsconfig.types.json && rollup -c --bundleConfigAsCjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@types/jsonwebtoken": "^9.0.2",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.23.0",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+packages:
+  - 'order-module/*'
+  - 'product-module/*'
+  - 'user-module/*'
+  - 'tools/*'
+  - 'bff'
