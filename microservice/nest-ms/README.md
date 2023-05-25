@@ -9,6 +9,7 @@ https://ace0220.github.io//microservice/intro-nest/
 去 tools/jwt 文件夹下运行以下命令
 
 ```sh
+pnpm install
 pnpm build
 ```
 
