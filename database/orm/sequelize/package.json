@@ -1,0 +1,26 @@
+{
+  "name": "sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "add": "npx ts-node ./src/add.ts",
+    "query": "npx ts-node ./src/query.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "@types/sequelize": "^4.28.15",
+    "@types/uuid": "^9.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "mysql2": "^3.3.2",
+    "sequelize": "^6.31.1",
+    "sequelize-typescript": "^2.1.5",
+    "uuid": "^9.0.0"
+  }
+}
