@@ -6,9 +6,11 @@ import { ProductModel, IPublicProductType } from '../models/product-model';
 async function main() {
   // 先同步所有模型
   await dbutil.sync();
+  // 一次添加一个用户
   await UserModel.create<IPublicUserType>({
     username: 'user' + uuidv4(),
   });
+  // 一次添加多个商品
   await ProductModel.bulkCreate<IPublicProductType>([
     {
       product_name: 'product' + uuidv4(),
